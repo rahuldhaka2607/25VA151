@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors2</title>
+    <style>
+        /*body{
+            color: aqua;
+        }*/
+        /*.box{
+            color: brown;
+        }*/
+        /*div{
+            color: blue;
+        }*/
+        /*.box > p{
+            background-color: blueviolet;
+        }*/
+        div -p{
+            color: burlywood;
+        }
+        a:hover{
+            color: brown;
+            font-size: 40px;
+        }
+        a:active{
+            color: bisque;
+        }
+        a:active{
+            color: blanchedalmond;
+        }
+        /*a:visited{
+            color:green ;
+        }*/
+        a:link{
+            text-decoration:color crimson;font-size: 20px;
+        }
+        ul {
+            list-style: none;display: flex;
+        }
+        ul li{
+            margin: 20px; border-right: 1px solid #999;
+            padding-right: 20px;
+        }
+        ul li:hover{
+            color: blue;
+        }
+
+        ul li:nth-child(5){
+            border-right: 0px;
+        }
+        .para::first-letter{
+            color: brown; font-size:large
+        }
+        .para::first-line{
+            background-color: aqua;
+        }
+        .para::after{
+            content: "Read More";
+            color: chartreuse;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--css combinators-->
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, repellat ullam! Eum necessitatibus sunt istone;font-size: 40px;e, illo nam vero. Possimus et illo, libero velit est nostrum. Iusto quis quod numquam natus.
+        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt vitae aliquid nulla cum repellendus repellat? Porro itaque est impedit tenetur quod necessitatibus distinctio soluta delectus omnis? Quaerat, voluptas nobis?
+            </p>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quam perferendis vel explicabo officia est! Provident vitae quod impedit! Quisquam officiis itaque iure corporis voluptas adipisci reiciendis, quam incidunt excepturi?
+    </p>
+    <!--pseudo classes-->
+    <a href="">vist this link</a>
+    <ul>
+        <li>home</li>
+        <li>servieces</li>
+        <li>about</li>
+        <li>gallery</li>
+        <li>contact</li>
+    </ul>
+    <!--css pseudo-->
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus, nihil sapiente laboriosam culpa saepe dicta quidem voluptates accusamus nulla. Modi veritatis necessitatibus repudiandae optio doloribus corrupti, nostrum alias deleniti.
+    </p>
+</body>
+</html>

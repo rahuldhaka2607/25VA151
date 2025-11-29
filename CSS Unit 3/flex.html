@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, .nav-global, footer {
+            padding: 15px;
+            text-align: center;
+            color: #8f0707; 
+        }
+
+        header {
+            background: #3da5ff;
+        }
+
+        .nav-global {
+            background: #0b305a;
+        }
+
+        footer {
+            background: #740b0b;
+        }
+
+        /* PAGE BODY LAYOUT */
+        .main-area {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* LEFT SIDE */
+        .left-area {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-title {
+            background: #501c94;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content1, .content2, .content3 {
+            background: #686663;
+            padding: 20px;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .content-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* RIGHT SIDE */
+        .right-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-local {
+            background: #9b9307;
+            flex: 1;
+            margin: 5px;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background: #81817f;
+            flex: 1;
+            margin: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>#Header</header>
+    <div class="nav-global">#Nav Global</div>
+
+    <div class="main-area">
+
+        <!-- LEFT SIDE -->
+        <div class="left-area">
+            <div class="page-title">#Page Title</div>
+            <div class="content1">#Content 1</div>
+
+            <div class="content-row">
+                <div class="content2">#Content 2</div>
+                <div class="content3">#Content 3</div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-area">
+            <div class="nav-local">#Nav Local</div>
+            <div class="sidebar">#Sidebar</div>
+        </div>
+
+    </div>
+
+    <footer>#Footer</footer>
+
+</div>
+
+</body>
+</html>
