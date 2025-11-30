@@ -1,7 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; } 
  
 
-body { background: #f7f8fb; color: #111; padding: 20px; } 
+body { background: #f7f8fb; color: #111; padding: 20px;text-align: center; } 
  
 
 .site-header { 
